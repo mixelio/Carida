@@ -783,6 +783,15 @@ h5 {
   .menu__icon {
     transform: translate(-20px, 0px);
   }
+
+  .top_careers__item {
+    margin: 17px 0;
+    flex: 0 1 62%;
+  }
+
+  .view_all__button {
+    width: 230px;
+  }
 }
 @media (max-width: 320px) {
   header .container {
