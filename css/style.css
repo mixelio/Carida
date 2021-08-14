@@ -252,6 +252,25 @@ h5 {
   margin: 0 auto;
 }
 
+.contacts_firstscreen {
+  position: relative;
+  width: 100%;
+  padding: 40px 0 114px;
+}
+.contacts_firstscreen .firstscreen__image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 150%;
+  z-index: -1;
+  top: -120px;
+}
+
+.feedback p {
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
 .button {
   background-color: #299ef6;
   transition-duration: 400ms;
@@ -506,6 +525,9 @@ h5 {
   line-height: 16px;
   text-transform: uppercase;
 }
+.footer__title a {
+  color: #fff;
+}
 
 .footer__contacts {
   padding-bottom: 38px;
@@ -637,10 +659,8 @@ h5 {
   background-color: #f7f7f7;
   padding: 84px 0 157px;
 }
-.feedback .container {
-  max-width: 900px;
-}
 .feedback p {
+  max-width: 900px;
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
@@ -648,10 +668,12 @@ h5 {
   color: #262a29;
 }
 
+.feedback__form {
+  background-color: #fff;
+  height: 630px;
+}
+
 @media (max-width: 920px) {
-  .firstscreen {
-    padding: 100px 0 265px;
-  }
   .firstscreen .firstscreen__image {
     max-width: 100%;
     height: 100%;
@@ -667,7 +689,7 @@ h5 {
   }
 
   .contact_us {
-    padding: 0px 0 20px;
+    padding: 100px 0 20px;
     transform: translate(0, -60px);
   }
 }
@@ -694,27 +716,29 @@ h5 {
     overflow: hidden;
   }
   header .header__menu {
-    display: block;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 15px 50px;
-    transform: translate(50%, -50%) scale(0);
+    transform: translate(-75%, 10px);
     opacity: 0;
+    visibility: hidden;
     z-index: 10;
     transition-duration: 600ms;
   }
   header .header__menu li {
-    margin-bottom: 15px;
+    margin-right: 15px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
   }
   header .header__menu li:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
   }
   header .header__menu._active {
-    transform: translate(-60px, -13px);
+    left: 0;
+    transform: translate(-75%, 30px);
     opacity: 1;
+    visibility: visible;
   }
 
   .firstscreen {
@@ -774,10 +798,21 @@ h5 {
 }
 @media (max-width: 580px) {
   header .header__menu {
-    transform: translate(20%, -60%) scale(0);
+    display: block;
+    transform: translate(-94px, 10px);
   }
   header .header__menu._active {
-    transform: translate(-80px, 25px);
+    transform: translate(-94px, 30px);
+  }
+  header .header__menu li {
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  header .header__menu li:last-child {
+    margin-bottom: 0;
   }
 
   .menu__icon {
