@@ -121,6 +121,7 @@ input::-webkit-search-results-decoration {
 /*--------------------*/
 body {
   font-family: Roboto;
+  background-color: #fff;
 }
 
 .container {
@@ -827,6 +828,10 @@ h5 {
 
   .view_all__button {
     width: 230px;
+  }
+
+  .footer__title {
+    font-size: 10px;
   }
 }
 @media (max-width: 320px) {
